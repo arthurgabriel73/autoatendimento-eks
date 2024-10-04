@@ -19,4 +19,5 @@ jobs:
       run: |
         terraform init
         terraform validate
+        terraform fmt -recursive -check
         terraform plan
