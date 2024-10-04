@@ -10,7 +10,6 @@ terraform {
     bucket = "autoatendimento-bucket"
     key    = "dev/terraform.tfstate"
     region = "us-east-1"
-
   }
 }
 
