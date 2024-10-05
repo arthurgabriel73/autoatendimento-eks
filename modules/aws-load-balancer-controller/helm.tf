@@ -2,7 +2,7 @@ resource "helm_release" "eks_helm_controller" {
   name       = "aws-load-balancer-controller"
   repository = "https://aws.github.io/eks-charts"
   chart      = "aws-load-balancer-controller"
-  version    = "1.4.7"
+  version    = "1.4.8"
   namespace  = "kube-system"
 
   set {
@@ -17,6 +17,6 @@ resource "helm_release" "eks_helm_controller" {
 
   set {
     name  = "serviceAccount.name"
-    value = kubernetes_service_account.eks_controller_service_account.metadata[0].name
+    value = "aws-load-balancer-controller"
   }
 }
