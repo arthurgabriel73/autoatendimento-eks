@@ -28,4 +28,5 @@ module "eks_aws_load_balancer_controller" {
   tags         = var.tags
   oidc         = module.eks-cluster.oidc
   cluster_name = module.eks-cluster.cluster_name
+  vpc_id       = module.eks_network.eks_vpc_id
 }
