@@ -8,7 +8,8 @@ resource "aws_iam_role" "eks_controller_role" {
         {
             "Effect": "Allow",
             "Principal": {
-                "Federated": "arn:aws:iam::${data.aws_caller_identity.current.account_id}:oidc-provider/oidc.eks.${data.aws_region.current.name}.amazonaws.com/id/${local.oidc}"
+                "Federated": "arn:aws:iam::${data.aws_caller_identity.current.account_id
+}:oidc-provider/oidc.eks.${data.aws_region.current.name}.amazonaws.com/id/${var.oidc}"
             },
             "Action": "sts:AssumeRoleWithWebIdentity",
             "Condition": {
@@ -22,12 +23,12 @@ resource "aws_iam_role" "eks_controller_role" {
 }
 EOF
 
-  tags = merge(
-    var.tags,
-    {
-      Name = "${var.project_name}-aws-load-balancer-controller"
-    }
-  )
+tags = merge(
+  var.tags,
+  {
+    Name = "${var.project_name}-aws-load-balancer-controller"
+  }
+)
 }
 
 resource "aws_iam_role_policy_attachment" "eks_controller_role_attachment" {

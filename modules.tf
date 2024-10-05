@@ -23,10 +23,11 @@ module "eks_managed_node_group" {
 }
 
 module "eks_aws_load_balancer_controller" {
-  source       = "./modules/aws-load-balancer-controller"
-  project_name = var.project_name
-  tags         = var.tags
-  oidc         = module.eks-cluster.oidc
-  cluster_name = module.eks-cluster.cluster_name
-  vpc_id       = module.eks_network.eks_vpc_id
+  source           = "./modules/aws-load-balancer-controller"
+  project_name     = var.project_name
+  tags             = var.tags
+  oidc             = module.eks-cluster.oidc
+  cluster_name     = module.eks-cluster.cluster_name
+  vpc_id           = module.eks_network.eks_vpc_id
+  eks_endpoint_url = module.eks-cluster.endpoint
 }

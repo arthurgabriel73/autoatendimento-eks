@@ -22,3 +22,8 @@ variable "vpc_id" {
   type        = string
   description = "VPC ID where the EKS cluster is running"
 }
+
+variable "eks_endpoint_url" {
+  type        = string
+  description = "EKS cluster endpoint URL"
+}
