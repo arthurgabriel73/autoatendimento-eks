@@ -1,10 +1,10 @@
 variable "project_name" {
   type        = string
-  description = "Project name to name the resources"
+  description = "Project name to be used to name the resources (Name tag)"
 }
 
 variable "tags" {
-  type        = map(string)
+  type        = map(any)
   description = "Tags to be added to AWS resources"
 }
 
@@ -15,5 +15,5 @@ variable "oidc" {
 
 variable "cluster_name" {
   type        = string
-  description = "Name of the EKS cluster"
+  description = "EKS cluster name"
 }
