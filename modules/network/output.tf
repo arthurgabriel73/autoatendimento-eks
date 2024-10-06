@@ -17,3 +17,8 @@ output "subnet_private_1b" {
 output "eks_vpc_id" {
   value = aws_vpc.eks-vpc.id
 }
+
+output "eks_sg_id" {
+  value = aws_vpc.eks-vpc.default_security_group_id
+  
+}
