@@ -13,6 +13,12 @@ terraform {
       version = "2.8.0"
     }
   }
+
+  backend "s3" {
+    bucket = "autoatendimento-bucket"
+    key    = "dev/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
