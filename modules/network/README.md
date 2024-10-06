@@ -48,6 +48,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_eks_sg_id"></a> [eks\_sg\_id](#output\_eks\_sg\_id) | n/a |
 | <a name="output_eks_vpc_id"></a> [eks\_vpc\_id](#output\_eks\_vpc\_id) | n/a |
 | <a name="output_subnet_private_1a"></a> [subnet\_private\_1a](#output\_subnet\_private\_1a) | n/a |
 | <a name="output_subnet_private_1b"></a> [subnet\_private\_1b](#output\_subnet\_private\_1b) | n/a |
