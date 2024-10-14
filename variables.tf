@@ -17,8 +17,3 @@ variable "tags" {
   type        = map(any)
   description = "A map of tags to add to all AWS resources"
 }
-
-variable "my_public_ip" { # Temporary for testing
-  type        = string
-  description = "Your public IP address"
-}
