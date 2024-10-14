@@ -20,5 +20,8 @@ output "eks_vpc_id" {
 
 output "eks_sg_id" {
   value = aws_vpc.eks-vpc.default_security_group_id
-  
+}
+
+output "gateway_id" {
+  value = aws_internet_gateway.eks_igw.id
 }

@@ -43,4 +43,5 @@ No resources.
 | <a name="output_cluster_name"></a> [cluster\_name](#output\_cluster\_name) | n/a |
 | <a name="output_eks_sg_id"></a> [eks\_sg\_id](#output\_eks\_sg\_id) | n/a |
 | <a name="output_eks_vpc_id"></a> [eks\_vpc\_id](#output\_eks\_vpc\_id) | n/a |
+| <a name="output_gateway_id"></a> [gateway\_id](#output\_gateway\_id) | n/a |
 <!-- END_TF_DOCS -->
