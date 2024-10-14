@@ -17,7 +17,3 @@ output "certificate_authority" {
 output "cluster_name" {
   value = module.eks-cluster.cluster_name
 }
-
-output "gateway_id" {
-  value = module.eks_network.gateway_id
-}
