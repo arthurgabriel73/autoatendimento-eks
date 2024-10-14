@@ -3,6 +3,7 @@ module "eks_network" {
   cidr_block   = var.cidr_block
   project_name = var.project_name
   tags         = var.tags
+  my_public_ip = var.my_public_ip # Temporary for testing 
 }
 
 module "eks-cluster" {

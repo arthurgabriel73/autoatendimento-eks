@@ -12,3 +12,8 @@ variable "tags" {
   type        = map(string)
   description = "Tags to be added to AWS resources"
 }
+
+variable "my_public_ip" { # Temporary for testing
+  type        = string
+  description = "Your public IP address"
+}
