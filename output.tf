@@ -3,7 +3,7 @@ output "eks_vpc_id" {
 }
 
 output "eks_sg_id" {
-  value = module.cluster.eks_sg_id
+  value = module.eks-cluster.eks_sg_id
 }
 
 output "cluster_endpoint" {
